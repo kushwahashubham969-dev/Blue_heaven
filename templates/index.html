@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beauty Parlour - Premium Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-spa"></i>
+                <h2>My Beauty Parlour</h2>
+            </div>
+            <div class="nav-contact">
+                <a href="tel:+919303675589" class="phone-link">
+                    <i class="fas fa-phone"></i> 9303675589
+                </a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#about">About</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to <span>My Beauty Parlour</span></h1>
+            <p class="hero-subtitle">Experience luxury beauty services in our premium salon</p>
+            <div class="hero-buttons">
+                <a href="#services" class="cta-button primary">View Services</a>
+                <a href="#contact" class="cta-button secondary">Book Now</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1556228757-b2f5b42a8e49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Beauty Salon Interior">
+        </div>
+    </section>
+
+    <!-- Parlor Photos Section -->
+    <section class="parlor-photos">
+        <div class="container">
+            <h2 class="section-title">Our Beautiful Salon</h2>
+            <div class="photos-grid">
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1556228757-b2f5b42a8e49?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salon Interior">
+                    <div class="photo-overlay">
+                        <h3>Luxury Interior</h3>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hair Station">
+                    <div class="photo-overlay">
+                        <h3>Hair Station</h3>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1606853737395-72a44da985b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nail Station">
+                    <div class="photo-overlay">
+                        <h3>Nail Bar</h3>
+                    </div>
+                </div>
+                <div class="photo-item">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Facial Room">
+                    <div class="photo-overlay">
+                        <h3>Facial Room</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Premium Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Advanced Facial</h3>
+                    <p>Deep cleansing, hydration therapy, and anti-aging treatments</p>
+                    <span class="service-price">₹1500</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💇‍♀️</div>
+                    <h3>Hair Styling</h3>
+                    <p>Professional cuts, coloring, keratin, and styling</p>
+                    <span class="service-price">₹1200</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💅</div>
+                    <h3>Manicure</h3>
+                    <p>Gel polish, nail art, and hand spa treatments</p>
+                    <span class="service-price">₹800</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🦶</div>
+                    <h3>Pedicure</h3>
+                    <p>Foot spa, scrub, and premium polish application</p>
+                    <span class="service-price">₹900</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💆‍♀️</div>
+                    <h3>Body Massage</h3>
+                    <p>Relaxing Swedish and therapeutic massages</p>
+                    <span class="service-price">₹2000</span>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💇‍♂️</div>
+                    <h3>Bridal Makeup</h3>
+                    <p>Complete bridal makeup and hair styling</p>
+                    <span class="service-price">₹8000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Work Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hair Styling">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1611100481087-2eb83c6dd97b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Manicure">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Facial">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bridal Makeup">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1590846928538-0f361af00e68?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Nail Art">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hair Color">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title">Pricing Packages</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic Package</h3>
+                    <div class="price">₹2500</div>
+                    <ul>
+                        <li>Facial</li>
+                        <li>Manicure</li>
+                        <li>Basic Haircut</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <h3>Premium Package</h3>
+                    <div class="price">₹4500 <span>₹5500</span></div>
+                    <ul>
+                        <li>Advanced Facial</li>
+                        <li>Hair Styling</li>
+                        <li>Manicure + Pedicure</li>
+                        <li>Free Massage</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Luxury Package</h3>
+                    <div class="price">₹8000</div>
+                    <ul>
+                        <li>Complete Makeover</li>
+                        <li>Bridal Hair + Makeup</li>
+                        <li>Full Body Spa</li>
+                        <li>Priority Service</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing service! My facial was incredible and the salon is so beautiful. Highly recommended!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Priya">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best bridal makeup I've ever had! The team made me feel like a princess."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Anita">
+                        <div>
+                            <h4>Anita Patel</h4>
+                            <span>Bridal Client</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Love their nail art! Clean salon and very professional staff."</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Riya">
+                        <div>
+                            <h4>Riya Singh</h4>
+                            <span>Regular Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556228757-b2f5b42a8e49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Our Salon Team">
+                </div>
+                <div class="about-text">
+                    <h2>About Our Salon</h2>
+                    <p>Established in 2018, My Beauty Parlour is the premier destination for beauty services in the city. Our 10+ expert stylists use international branded products and latest techniques to serve 500+ happy clients monthly.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-award"></i>
+                            <span>10+ Years Experience</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <span>Certified Stylists</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>24/7 Booking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Book Your Appointment</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919303675589">9303675589</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 9AM - 9PM<br>Sunday: 10AM - 6PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Main Market, City Center<br>Near Shopping Mall</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number *" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="facial">Facial</option>
+                                <option value="hair">Hair Styling</option>
+                                <option value="manicure">Manicure</option>
+                                <option value="pedicure">Pedicure</option>
+                                <option value="massage">Massage</option>
+                                <option value="bridal">Bridal Package</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Special requests or preferred time..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button full-width">Confirm Booking <i class="fas fa-calendar-check"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-spa"></i> My Beauty Parlour</h3>
+                    <p>Your trusted beauty partner since 2018. Experience luxury and perfection.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#services">Services</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Book Now</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 9303675589</p>
+                    <p><i class="fas fa-clock"></i> Open 9AM - 9PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 My Beauty Parlour. All rights reserved. | Designed with ❤️</p>
+            </div
+                                                                                                                                                                                                                                                                                                                                                              
