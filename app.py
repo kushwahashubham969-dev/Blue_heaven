@@ -1,33 +1,64 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
+import sqlite3
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('index.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
+# Database create 
+def create_database():
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    if request.method == 'POST':
-        name = request.form['name']
-        message = request.form['message']
-        print(f"Message from {name}: {message}")
-        return redirect('/')
-    return render_template('contact.html')
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS appointments (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            name TEXT NOT NULL,
+            phone TEXT NOT NULL,
+            service TEXT NOT NULL,
+            appointment_time TEXT NOT NULL
+        )
+    """)
 
-if __name__ == '__main__':
-    app.run(debug=True)
-from flask import Flask, render_template
+    conn.commit()
+    conn.close()
 
-app = Flask(__name__)
 
-@app.route('/')
+# Home page
+@app.route("/")
 def home():
     return render_template("index.html")
 
-app.run(debug=True)
+
+# Form data 
+@app.route("/book", methods=["POST"])
+def book():
+
+    name = request.form["name"]
+    phone = request.form["phone"]
+    service = request.form["service"]
+    appointment_time = request.form["appointment_time"]
+
+    conn = sqlite3.connect("database.db")
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        INSERT INTO appointments
+        (name, phone, service, appointment_time)
+        VALUES (?, ?, ?, ?)
+    """, (name, phone, service, appointment_time))
+
+    conn.commit()
+    conn.close()
+
+    return """
+    <h2>Appointment booked successfully!</h2>
+    <a href="/">Go back</a>
+    """
+if __name__ == "__main__":
+    create_database()
+    app.run(host="10.245.14.174", port=5000, debug=True)    
+
+if __name__ == "__main__":
+    create_database()
+    app.run(debug=True)
 
