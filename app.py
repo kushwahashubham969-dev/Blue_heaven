@@ -10,13 +10,7 @@ def get_connection():
     database_url = os.environ.get("DATABASE_URL")
 
 def get_connection():
-    return psycopg2.connect(
-        host=os.environ.get("DB_HOST"),
-        port=os.environ.get("DB_PORT"),
-        database=os.environ.get("DB_NAME"),
-        user=os.environ.get("DB_USER"),
-        password=os.environ.get("DB_PASSWORD")
-    )
+    return psycopg2.connect(os.environ.get("DATABASE_URL"))
 
 # Database create
 def create_database():
