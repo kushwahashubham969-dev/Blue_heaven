@@ -59,8 +59,5 @@ def book():
 if __name__ == "__main__":
     create_database()
     app.run(debug=True)
-
-if __name__ == "__main__":
-    create_database()
-    app.run(host="10.245.14.174", port=5000, debug=True)        
+    
 
