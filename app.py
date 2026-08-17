@@ -9,8 +9,14 @@ app = Flask(__name__)
 def get_connection():
     database_url = os.environ.get("DATABASE_URL")
 
-    return psycopg2.connect(database_url)
-
+def get_connection():
+    return psycopg2.connect(
+        host=os.environ.get("DB_HOST"),
+        port=os.environ.get("DB_PORT"),
+        database=os.environ.get("DB_NAME"),
+        user=os.environ.get("DB_USER"),
+        password=os.environ.get("DB_PASSWORD")
+    )
 
 # Database create
 def create_database():
