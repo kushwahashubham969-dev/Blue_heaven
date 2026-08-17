@@ -54,11 +54,13 @@ def book():
     <h2>Appointment booked successfully!</h2>
     <a href="/">Go back</a>
     """
-if __name__ == "__main__":
-    create_database()
-    app.run(host="10.245.14.174", port=5000, debug=True)    
+
 
 if __name__ == "__main__":
     create_database()
     app.run(debug=True)
+
+if __name__ == "__main__":
+    create_database()
+    app.run(host="10.245.14.174", port=5000, debug=True)        
 
